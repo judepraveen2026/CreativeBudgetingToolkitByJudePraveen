@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Creative Budgeting Toolkit by Jude Praveen</title>
+  <title>Creative Budgeting Toolkit</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
 
@@ -11,41 +11,43 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: 'Inter', sans-serif;
       background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
       color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 30px 20px;
     }
 
-    .container {
-      max-width: 900px;
-      backdrop-filter: blur(14px);
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 50px 40px;
-      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 120px 20px 80px;
     }
 
     h1 {
-      font-size: 2.8rem;
+      font-size: 3rem;
+      color: #00ffc6;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #7DF9FF;
       margin-bottom: 15px;
-      color: #00FFC6;
-      letter-spacing: 1px;
+      font-size: 1.7rem;
     }
 
     p {
       font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 30px;
+      line-height: 1.8;
       color: #e0e0e0;
+      margin-bottom: 25px;
     }
 
     .button {
@@ -64,40 +66,100 @@
       box-shadow: 0 4px 20px rgba(0, 255, 198, 0.5);
     }
 
-    .section-title {
-      font-size: 1.6rem;
-      margin-top: 40px;
-      margin-bottom: 15px;
-      color: #7DF9FF;
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
     }
 
-    @media (max-width: 700px) {
-      .container {
-        padding: 30px 20px;
+    .feature-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .features {
+        grid-template-columns: 1fr;
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.95rem;
+      color: #ccc;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+
+  <section class="hero">
     <h1>Creative Budgeting Toolkit</h1>
-    <p>
-      The Creative Budgeting Toolkit is a futuristic finance tool designed for modern creators — whether you're an independent musician, digital influencer, filmmaker, freelance artist, or actor. We know managing money in a non-traditional, project-based career is tough — so we built something that’s actually *built for you*.
-    </p>
-    <p>
-      Track income from gigs, brand deals, sessions, and royalties. Visualize your monthly and yearly expenses with clean dashboards. Plan your savings goals, manage recurring costs, and stay financially organized across your chaotic creative journey — all in a sleek, intuitive dashboard.
-    </p>
+    <p>The all-in-one financial toolkit built for creators. Whether you're a musician, influencer, or filmmaker — stay on top of your money, your goals, and your growth.</p>
+    <a href="#features" class="button">Explore Features</a>
+  </section>
 
-    <h2 class="section-title">About Us</h2>
+  <section id="about">
+    <h2>What Is It?</h2>
     <p>
-      We’re a youth-led initiative focused on empowering creatives through accessible financial tools. Founded by <strong>Jude Praveen</strong>, a student and aspiring brand strategist, this toolkit reflects a mission to make money management not just manageable, but inspiring. Our vision is to combine art, tech, and finance into tools that speak your language — clear, beautiful, and effective.
+      The Creative Budgeting Toolkit is a sleek, powerful spreadsheet + dashboard system designed specifically for non-traditional creative careers. Traditional finance apps don’t understand royalties, brand deals, freelance invoices, and passion projects. We do.
     </p>
+    <p>
+      This toolkit gives you structure, visibility, and peace of mind so you can focus on your craft while staying financially in control.
+    </p>
+  </section>
 
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>🎯 Creative-Centric Budgeting</h3>
+        <p>Custom categories built for gigs, content income, sponsorships, and studio costs.</p>
+      </div>
+      <div class="feature-box">
+        <h3>📊 Dynamic Visuals</h3>
+        <p>Auto-updating graphs and visuals help you track your income, expenses, and net savings over time.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🌐 Cloud Friendly</h3>
+        <p>Built for Google Sheets and Excel. Collaborate or access your dashboard anywhere.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💡 Smart Automation</h3>
+        <p>Pre-built formulas, auto summaries, and forecasting tools help simplify your money.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about-us">
+    <h2>About Us</h2>
+    <p>
+      We’re a youth-led team on a mission to empower the next generation of creatives. The Creative Budgeting Toolkit was created by <strong>Jude Praveen</strong>, a student and aspiring brand strategist, who saw the need for better financial tools built with artists in mind.
+    </p>
+    <p>
+      With a passion for design, branding, and personal growth, Jude created this toolkit to merge the worlds of finance and creativity into something useful — and beautiful.
+    </p>
+  </section>
+
+  <section>
+    <h2>Get Started</h2>
+    <p>
+      Ready to take control of your creative finances? Download the toolkit and launch the dashboard below.
+    </p>
     <a href="dashboard.html" class="button">Launch Dashboard</a>
-  </div>
+  </section>
+
+  <footer>
+    © 2025 Creative Budgeting Toolkit by Jude Praveen. All rights reserved.
+  </footer>
+
 </body>
 </html>
